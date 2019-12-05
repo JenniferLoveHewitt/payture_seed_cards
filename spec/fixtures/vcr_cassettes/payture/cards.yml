@@ -1,0 +1,1616 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D5218851946955484%3BEMonth%3D12%3BEYear%3D21%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:22 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '132'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=VFmJ5gpmWU384NlJ/tbGzqjcON2MFZ+KrXFykPg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668522085; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="3eb24d67-19d4-4e09-b0a4-16939a6fab64" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:22 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D3eb24d67-19d4-4e09-b0a4-16939a6fab64%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:23 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=dwfM8hXZsjmLx1LK/+2tVtX7LzQOvJPnV8sJLmA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668523067; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="3eb24d67-19d4-4e09-b0a4-16939a6fab64"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:23 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111111112%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:27 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '132'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=Fccekr46Mu1PGMVA/lgET7Vo8k3xA95bb4WDuOA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668523608; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="56fe713c-fb64-4df9-ae5f-2dcc85c75b67" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:27 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D56fe713c-fb64-4df9-ae5f-2dcc85c75b67%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:27 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=p4G7N9CxNmaCuca7/R7E9zCbtAf0qkvu5F9hmdA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668527717; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="56fe713c-fb64-4df9-ae5f-2dcc85c75b67"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:27 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100031%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:30 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '132'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=vjma5qxeewErNXTp/0xiYkfHa7FT0lXTDEvBllA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668527921; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="6df0d6c7-d0b5-41d1-8187-2772220b13a4" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:30 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D6df0d6c7-d0b5-41d1-8187-2772220b13a4%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:30 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=sY81e5cE5T11XJfW/MEYEPDVS6e1gpY9PVAVj2Q==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668530279; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="6df0d6c7-d0b5-41d1-8187-2772220b13a4"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:30 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100023%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:31 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '131'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=pkx9QCqWDX0XbKDm/6Q2N2rKiuDqssbXo829TFA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668530508; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="6e698cfd-f442-49e6-8f03-8dc646ef8940" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:31 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D6e698cfd-f442-49e6-8f03-8dc646ef8940%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:31 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=rpXSc55QBBd1qwvO/5/57Q2ZDXsZ18beMBNsVGg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668531437; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="6e698cfd-f442-49e6-8f03-8dc646ef8940"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:31 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D5486732058864471%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:34 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '555'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=r6tBLdHR7jDPtnUo/yBiyF/s2IHTUwlDmJ0gF3g==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668531619; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="YjYyMzU5NGYtYTNhMy00YTMzLThlNjgtMDdmNmYwNjlhOTZjZDk5OGQ5ZWQtZWFjOS00YmU4LWE5MWUtZWJmYzI2Mjk5NWFjMTM2NjQ1YWQtMzU5Mi00NDNiLThkMzAtNTJlYWVhZTJjZmNiMjcyNTY2ZjMtYzlhNy00MWY5LTg4NmQtODhhNTcyZjA2MTgyMTk1YjEyZTUtNjFkZC00YzVkLWJkZWEtNmQzZGMwODlhNTg4OWYyM2ZjNjMtZmUxMi00MWZjLTgwMjQtZGJjNmU2ZmM1NDIyMDJjOWJhYjMtYzYwZC00YzI1LWJjNjMtZTJmYjUzNWQ5NGE3NDM3NDBiYjktOTRjMC00MjU0LWE1MjUtMTFhYzc0Y2UzZDdkMmE4ZGQxZjktZWFmOC00MGNmLTk0Y2YtZmI3ZTJkZGMwYThiMjY0NTFjYjYtMmYxYi00NzUzLWI3MzItZGVmMTcwZTc1YTM5"
+        ThreeDSKey="18d0a26c-33b7-4abb-824b-6fa1018030cb" CardName="548673xxxxxx4471"
+        CardId="7925d5c3-dcb4-41b6-b830-6d685c5fc438" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:34 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D7925d5c3-dcb4-41b6-b830-6d685c5fc438%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:35 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=3a7bgwCJqVg1s3dY/8ER9C6ogXBDRwnnu7+m9Yw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668534620; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:35 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111111111%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:37 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '556'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=DPT8RViGSupQcn8H/jbCjLxpgKsImjMj3otDNUQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668535421; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="MWU5YjVmMzAtOGY5OC00MWI5LWE0MTYtYTliODZiMDc4ZTUxYTY5NzViZjItZjc1Mi00ZGUwLTkwOTktZDJhZWNlYTA0YzA5ZmRmMDM5ZDEtNWQwYy00MWU4LWJmZWEtMGYzMWJjZTVjZjYzN2UyNmUwNWQtNGQ4MC00NzNiLWE0OTgtNDA5NGM0ZWQ4MTIzYmM2NTIwNTYtMDhlMC00MDYwLTg2MmQtM2Y5ZjBjOGE5YTU0ZDBjZWQ4MjQtMTc0ZS00MmIwLWIwOGEtNzljNTkwZDNkODg4ODYyMzdlNDYtZTcxOC00Y2UyLWI4NmQtZWE0ZGJiZmY5NmE1MGIxMjAzOGUtYzVjNC00OTEzLWJhM2MtYjg5Mzg1ZTI3ZWViOTc5MWNiYjAtNjE3MS00ZWQ3LWE3NTMtYzQ2YmJlMjgzODY2Mjk4MTNiODktNmY5MS00OTI5LTliN2UtNzY0ZjRlZWY1MzEz"
+        ThreeDSKey="e53214a2-1afe-4d75-a552-ed9f025153a4" CardName="411111xxxxxx1111"
+        CardId="84825d7d-681d-40bd-ab89-1e0e3727e09f" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:37 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D84825d7d-681d-40bd-ab89-1e0e3727e09f%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:37 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=wwFiPvDVvohruoQo/Lredk9Dl76UxndNDfdagCw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668537681; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:38 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111111114%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:39 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '558'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=YFU3f7Rm13aHPaaZ/xecroRNMWCbSeyVeZiuRew==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668538089; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="YzBmYWZiM2UtNTFkNC00ZmViLWE1YWEtODkwOWQxNzY1OWMyZTU0YzEyYWQtMGE3Yi00MmIyLWFiMWMtOGI3MDI4NjdlMjExMGEwMTU1YzUtZTM5Ny00ZTEzLWI1MTEtOTBiMTJiNTUxMTk5ZTNkOTgyOTEtZjVhYy00NGEyLTllOTctZmMyNGM5MmQ3NDhjZmZkNmQxZWYtYzM0Ny00M2Q2LTg0MDAtYmI1YjY2MDM2MjU4YzBiNTcwOGMtODA5NC00Yjc5LWFhYjAtZDRlOTM0MTQ1Y2Y5OGFjNGUwZmMtMjQ4OS00NWUyLTliOWQtN2JlYWRiOThlYmZlODM4YmUyNGMtYmYyZC00MjJiLTg1ZGItNjkxYmI4YzEwODY0YmJlNGY4Y2MtZjljMS00ZWEyLTk5YWMtY2Y1YTc5NDMxNGUwN2ZiMDUwOGEtYzYwYS00NThkLWFhMzYtOWU3YmU5MjUzYTFk"
+        ThreeDSKey="5fe59568-56ed-4a92-a6b4-c77d851e11b5" CardName="411111xxxxxx1114"
+        CardId="6d0d44c7-5349-4da5-8530-7cc608692ba6" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:39 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D6d0d44c7-5349-4da5-8530-7cc608692ba6%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:40 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=evaOTbSeTU8f8Jsi/2H8IPmZUHL50jYGIMF3eeA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668539931; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:40 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111111115%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:41 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '554'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=D9VQciBlEHXsTmnn/vf6vkpE+DypYQQw+TDqMJw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668540125; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="MTNiMWZmNWQtYWU5ZC00ZWE0LTgxNmQtNWJiNTE1NjdiNzM2ZDNjODY4YjItMmYzZi00MzkzLThhMTctOGI5ZjRhYTc5OTE5ZTc1ZDQ2NGYtZjFjOS00MzZkLThjOTMtYmE4YWE2MTFjNDhjMzM3NzliNzktZjg5Ni00YTljLTk0NmUtN2NjYWFlMGJkM2I4YmRiYjgxMDktZmI4NS00YWFkLTg2YjMtYTFmNWNkODE4YjQ2MGU2NTI3NmMtN2E4NC00YjQyLWFiNzYtZGNiMTFmZGI2NzU4NDk4ODkwYWYtMTVhYy00YmIxLThhNDUtMGZhZGQ1NzljYzAwNmQ0ZGQyYTUtYjkwNC00NzdiLTkwYjgtZjNkMDIwZGQ5MTJiZWY0MGFiNTctNmEzZC00YjcyLTljNGYtMjMzNTI3ZDM5M2RiZWVkNjhhZTYtZDhkMS00MWNiLWI3ZDEtMDQ4NjY4NTZmZmRj"
+        ThreeDSKey="3e336487-18bb-4f7b-bfe3-b3bc0f6bac8a" CardName="411111xxxxxx1115"
+        CardId="97514ee4-82da-45da-b2bd-6c90548af966" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:41 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D97514ee4-82da-45da-b2bd-6c90548af966%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:42 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=7jhwcDXNuKvGGCxh/gw7wU4AdXZK5NOSjlnLL4A==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668541994; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:42 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D3300000000000001%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D521%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:43 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '88'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=mxPQ48Nh47uK4H8J/R8aYXMYXkYRuasL3fxdUmw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668542178; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="AMOUNT_EXCEED"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:43 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4400000000000008%3BEMonth%3D9%3BEYear%3D2011%3BSecureCode%3D521%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:43 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '87'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=iITmhTKWCjbwFZUc/nwjZYYpsKu3Zh3DZReXZXA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668543520; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="WRONG_PARAMS" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:43 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D5500000000000004%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D521%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:45 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '94'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=31WJqxvoWBBnKfw2/UqtPPlgE8Jn9I0okwHjsGA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668543757; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="ISSUER_BLOCKED_CARD"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:45 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D6600000000000001%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D374%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:46 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '91'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=ldD3qKOSDj7kSreG/UzX+hffG8DV00injL8jvrw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668545365; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="ISSUER_CARD_FAIL"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:46 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111101000000046%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:47 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '132'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=EeFeeUc9vkQbWOnG/MRuge5NKmmoFnjClrftvtQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668546688; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="25cc5790-3d6c-4546-87fc-ef9ebfff4a5b" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:47 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D25cc5790-3d6c-4546-87fc-ef9ebfff4a5b%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:47 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=OnojAcYR0gXPp1Ju/PXhwK0cLuF7uluDIiVR1sg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668547497; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="25cc5790-3d6c-4546-87fc-ef9ebfff4a5b"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:47 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100056%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:48 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '91'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=pfLmiUXCuvBeegfm/6K/0tZLn9OsJBV0v7pD3Iw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668547678; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="PROCESSING_ERROR"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:49 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100072%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:50 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '94'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=tYPLLAG92vGhINxV/do3oWRxgWjwlC2ca40oBGQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668549051; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="ISSUER_BLOCKED_CARD"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:50 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100080%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:51 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '91'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=j2ginMZv2dkRO8KQ/91iaFiU8u+aKf6hIytswoQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668550375; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="ISSUER_CARD_FAIL"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:51 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100221%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:52 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '132'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=PIaKOcqc5QNLr6Ev/CJeFRrcNXDXHMTBQuneW0Q==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668551628; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="d62adc34-6039-41fa-80d5-5772ec3aec77" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:52 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3Dd62adc34-6039-41fa-80d5-5772ec3aec77%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:52 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=6lPSOmllY0FlgqLV/26WFrqEXr8lF3EpreF5maQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668552399; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="d62adc34-6039-41fa-80d5-5772ec3aec77"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:52 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111100627%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:53 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '133'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=rljxGub89beJTaia/amOx8qsOuelPHPxyXADB+g==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668552582; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="010f69f2-07be-42aa-bd1c-d64a42560716" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:53 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D010f69f2-07be-42aa-bd1c-d64a42560716%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:53 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=JfkxOnRXSDsUVbEn/Rk9TELwFmgU+eeveUe5rlA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668553330; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="010f69f2-07be-42aa-bd1c-d64a42560716"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:53 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4111111111102029%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:54 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '133'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=5pbn4PWC4GWU7akt/vDsfgjQjVPPkY1VZnOcGdQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668553511; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="3a5ca2cc-f0e7-4287-bb90-d8f5dfd9615b" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:54 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D3a5ca2cc-f0e7-4287-bb90-d8f5dfd9615b%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:54 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=lKtuG3AiCGWYtlAD/6brDWyCyeGhjpEUqmlJEFQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668554369; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="3a5ca2cc-f0e7-4287-bb90-d8f5dfd9615b"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:54 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4100401111100062%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:55 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '133'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=L5snBqQpKmDN9LxH/jt35BDvs+0185PWqUPSoqA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668554548; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="2aa87354-4519-425e-b27b-92a7fef3c420" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:55 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D2aa87354-4519-425e-b27b-92a7fef3c420%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:55 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=Yd3GRkfL0RoTqCos/gI2+ntA1pbhxTapyJ1/teg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668555329; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="2aa87354-4519-425e-b27b-92a7fef3c420"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:55 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4100401111100724%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:56 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '134'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=1PZ0cK06KuOqsiTh/IUhNLy4+gupOjMQF1xg46Q==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668555533; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="25808291-8115-4ab7-861d-d09f3ca34ff1" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:56 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D25808291-8115-4ab7-861d-d09f3ca34ff1%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:56 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=oCXl3tUqAK0qSOUD/tVlygzcJgxlOzIJgCH2pHg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668556417; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="25808291-8115-4ab7-861d-d09f3ca34ff1"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:56 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4100401111100328%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:57 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '131'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=2MLixEB5MC5mEY4i/SYk5OZFERNh28Rk2rj393Q==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668556611; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="eca9ffad-c130-41dc-8def-930749a600e7" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:57 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3Deca9ffad-c130-41dc-8def-930749a600e7%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:57 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=KqnT849FksceP5nH/XD7OAYwl5zQWc3kfSiKb2w==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668557645; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="eca9ffad-c130-41dc-8def-930749a600e7"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:57 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D4100401111103025%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:58 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '133'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=8Nblpr2FRlrxZsdS/IJgynk9KcMBDkO9dnaC5FA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668557826; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="False" ErrCode="DUPLICATE_CARD"
+        CardId="ca8d906b-8785-4ea0-b983-9939082215c2" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:58 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3Dca8d906b-8785-4ea0-b983-9939082215c2%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:35:58 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '114'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=lMqEps4DPsnHf4jT/yBqZnGIb4GtWcoINEI5cwg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668558700; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="True" VWUserLgn="user_login" CardId="ca8d906b-8785-4ea0-b983-9939082215c2"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:35:58 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D2202201111110010%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:00 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '558'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=VX7NPAvYH3cawMAt/Twy7BTmxLfhRi+iH0bBMDA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668558902; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="YTIyYjk3M2YtMTZhNC00NzQwLTliMGUtYTA0OWFiOGUzMjU1MTg4NDAyMWMtOGFjMi00MWYyLTllMzYtM2RhNTg0MDU4ZThhNWFkMTFiYmUtMGQ3Zi00NTRmLTljOTUtZTMxYzQ1MzViYzM0ZTNhNWQ5OTktNjY4ZS00MmZhLTkyZmUtZTBiNGZkMDc3OTBhOWMzZGM4YmYtMzUzOS00MjJiLWFlMzUtNmNhNTZjMmZlZDA3YjA1MDNjZjQtZjcyZS00NmZkLWJkZWYtYmI5YjRjMTg4OWIxNTg1ZmMwNTAtMDA2MS00NGNiLWI0NGEtNzdkODg3ZjYzNTJjYjZjNTU0ZmItOWFlOC00Y2EyLThjZDktYjMwYTAyNDI1MThiNDJhNmVkODktMjI0Mi00OTk5LTk2ZDItNjI3ZTk3NmFjZjc4OGRmMzczODgtYjI0OC00OTI3LTg1NDgtMDA0NTA2OGNlZDQ1"
+        ThreeDSKey="8f4adca8-f717-4e2a-97f1-a72b76cf3b17" CardName="220220xxxxxx0010"
+        CardId="7393074e-c5d2-4031-8acf-1ab80119cc46" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:00 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D7393074e-c5d2-4031-8acf-1ab80119cc46%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:01 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=T8dwQFnapJJseX1Y/3tAcIwaWY1O3bMzrVtuLyg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668560996; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:01 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D676280000000000011%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:03 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '555'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=ipt5LGBcX2YMUZh6/2a/+FK731Zxcv6LhGgyKKQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668561179; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="YzEyZmI4NmEtMGYzMi00MmNjLWE0ZDMtZTExMGFmMzUyYTZlYThhZDMzMWItZDFmYy00YTlkLThiMDMtMTZmMmI0N2Y0YWQyZWZkZWFmNGQtNDg1ZC00OTcyLTk5NmQtNzY4N2I0NjIwMWNhMTFiNTE4MDUtODRiOC00ODg4LTlkZTQtYjE2MmViNGRkZTNjOTE3ODgzMTYtOGYwYS00MTQwLTk1NGMtZmQwN2E3NmI2ZTAyZWZhZmFjZmYtNGY2Yy00MzNmLWI5MDAtMjBhZjEzMGYwYmRlN2IzNGQ1MzctODU2YS00OGVjLWE1MTMtNTZmNjJiMTZhNzdjZWIwZTM5MzYtZTEwNC00ZTEzLWEyYzQtM2I0NzQ5NTU4Mjg1ODJhNDU5YjItNmIzMC00YjIyLWIyMTMtMTBmMjU4M2JmMmM5NjhkNWIwZGItNjM3My00ZWQzLWJjOTAtZjA2OGZlODk3OTA5"
+        ThreeDSKey="7e78685d-befc-48ee-90c3-89627cf8e3f0" CardName="676280xxxxxxxx0011"
+        CardId="6a0d9605-a1cf-4812-9761-a7d9c05e2444" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:03 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D6a0d9605-a1cf-4812-9761-a7d9c05e2444%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:03 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=ihkW0hULZlZMlI9m/t2AL/OZRpGWqLgSJF+mLqQ==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668563791; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:03 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D6390020000000000010%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:05 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '562'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=EX8SKIxmqgRw5fHL/0deiVyyDCNMwAPCvtjhvHw==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668563972; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="ZWE2ZDdlNmMtYzg3Zi00YTcwLTk4NDUtMGRjOGUwODY4YmJiMTE2ZDlkZDktY2I2NS00NmNlLTkxNWYtMzUxYWY5ZGQwNWU1ZmM4N2ZmMmUtMWQ0My00ODI3LTgyMmEtNjIxNDVlY2EzMzljYTEwOGZjNzEtNTQzMC00MWJhLWE5ZjgtZTNiMDJkZjBmYWYyZGY3NGY1YzgtNTU0NS00Mjk0LWFjMDMtNWM1MjJhOTg1N2Q2MGMyZjY0NDgtNDNhOS00YjcxLTlmNjktMjdhZDgzYjhhZDg1ZDczNTRmYzAtMjQyYi00MzhkLWJjZjUtZmExOWMzMjAxODkyZWJmZjRhMDMtOTI5Yi00NmQwLWI3Y2YtZTFiM2M5NWE4ZTk0ZTY4NTcxNzQtOTRhMC00NzM3LWJjMDYtNjIxNDQwMDIzYWEyNjE1NDU4Y2YtMWJlMS00M2E0LThlOTUtMmUyZTc5NzU0YzJk"
+        ThreeDSKey="9c6a1a40-40df-416a-ab77-f7d23efa79cc" CardName="639002xxxxxxxxx0010"
+        CardId="30155db7-063b-4da8-84ee-214ad84d44b5" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:05 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D30155db7-063b-4da8-84ee-214ad84d44b5%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:05 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=r0cCMajJbTbBPZat/Jqd8UJc0x1lQ5bGYHXYgZg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668565839; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:05 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Add?DATA=CardHolder%3DTest%3BCardNumber%3D676280651854600010%3BEMonth%3D12%3BEYear%3D22%3BSecureCode%3D123%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:07 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '558'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=F301xrBZSRIMinDI/Qa2EOP4H4uuXqlmN4XcYlg==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668566020; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Add VWUserLgn="user_login" Success="3DS" ACSUrl="https://sandbox3-3ds.payture.com/simulp3ds/ACS/"
+        PaReq="OGNkNjk2ZWYtMDZkNS00NjM4LThiMzYtZGZmZWE2ZDFjOTVlYWM5Y2I5ZDktYmY4Yi00MjZlLTlmN2YtNmYzNTE4MWZmYjA5YjhiYmY5N2YtZjliMi00MzcxLTkwYTAtOWYxZDM1NzFmOGM3NGE4OTcyMjgtYTBmYS00ZTdkLWI0OGUtNDhlNjA5NWYyMGMyM2M2YWVmODAtOWU4NS00NjFjLWEyM2QtZTFhMDBmZDg2MTg0N2Y0YzM5NWEtZWZkZi00NDI2LWFjYTctNzkyYzNlNDg4ZjQ3M2UxYmQ0ZDItODEwZi00MjcxLTk0YjktMjI4MTBkZGJjMmExNzY3ZWY2ODQtODM4Mi00YTM4LTk5MjYtMTllMzZmMDczNTVhM2YwYjE0OTktOGU2NC00MjhiLWIyOGUtNmE2ZjkwMmY3ZjQzZmJiMWUzZDQtZjBmZi00MGRjLTg5NGItN2RhMTk1NmMzZTc2"
+        ThreeDSKey="b87bb51a-e951-42a1-8b30-ec5bb59b5c83" CardName="676280xxxxxxxx0010"
+        CardId="39f69179-dcd6-4913-b6f8-0d7ab00e0fba" />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:07 GMT
+- request:
+    method: post
+    uri: https://sandbox3.payture.com/vwapi/Activate?DATA=CardId%3D39f69179-dcd6-4913-b6f8-0d7ab00e0fba%3BAmount%3D101%3BVWUserLgn%3Duser_login%3BVWUserPsw%3Duser_password%3B&VWID=Merchant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      date:
+      - Tue, 09 Jul 2019 10:36:08 GMT
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '105'
+      connection:
+      - close
+      set-cookie:
+      - ipp_uid2=6XhASYGkdauFM5Xn/BO1WGLkLPgy026We50/YFA==; expires=Tue, 31 Dec 2030
+        23:59:59 GMT; path=/, ipp_uid1=1562668567885; expires=Tue, 31 Dec 2030 23:59:59
+        GMT; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: <Activate Success="False" VWUserLgn="user_login" CardId="" ErrCode="REFUSAL_BY_GATE"
+        />
+    http_version: 
+  recorded_at: Tue, 09 Jul 2019 10:36:08 GMT
+recorded_with: VCR 5.0.0
